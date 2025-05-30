@@ -1,83 +1,36 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <title>Y2K Lending</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Lato', sans-serif;
-      background: #fff;
-      color: #222;
-      line-height: 1.6;
-      padding: 0;
-      margin: 0;
-    }
-    header {
-      background: #fff;
-      padding: 2rem;
-      text-align: center;
-      border-bottom: 2px solid #eee;
-    }
-    header h1 {
-      font-family: 'Montserrat', sans-serif;
-      color: #A94442;
-      font-size: 2.5rem;
-    }
-    .subtitle {
-      font-size: 1.25rem;
-      margin-top: 0.5rem;
-    }
-    main {
-      padding: 2rem 4%;
-      max-width: 900px;
-      margin: auto;
-    }
-    section {
-      margin-bottom: 3rem;
-    }
     h2 {
-      font-family: 'Montserrat', sans-serif;
-      color: #A94442;
-      font-size: 1.75rem;
+      font-size: 2.1rem;
+      font-weight: bold;
+      margin-top: 2.5rem;
       margin-bottom: 1rem;
     }
-    ul {
-      padding-left: 1.5rem;
-      margin-top: 1rem;
-    }
-    li {
-      margin-bottom: 0.5rem;
-    }
-    .emoji {
-      margin-right: 0.5rem;
-    }
-    a.cta {
-      display: inline-block;
-      margin-top: 2rem;
-      padding: 1rem 2rem;
-      background: #A94442;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 6px;
-    }
-    a.cta:hover {
-      background: #922F2F;
+    p, ul li {
+      font-size: 1.2rem;
+      line-height: 1.6;
     }
   </style>
-</head>
 
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Submit a Loan Request</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
 <body>
   <header style="text-align: center; padding: 2rem;">
     <img src="logo.png" alt="Y2K Lending Logo" style="max-height: 100px; margin-bottom: 1rem;">
-    <h1>Apply for Funding</h1>
-    <div class="subtitle">Let's fund your next project—fast and flexibly.</div>
+    <h1 style="font-size: 2.5rem; color: #a94442;">Apply for Funding</h1>
+    <p style="font-size: 1.2rem;">Let's fund your next project—fast and flexibly.</p>
   </header>
-  <main style="display: flex; flex-direction: column; align-items: center;">
-    <form action="https://formspree.io/f/mrbkzkyy" method="POST" style="width: 100%; max-width: 600px; background: #f9f9f9; padding: 2rem; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.05);">
+
+  <main style="display: flex; justify-content: center;">
+    <form action="https://formsubmit.io/send/maz@kattula.com" method="POST" style="width: 100%; max-width: 600px; background: #f9f9f9; padding: 2rem; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.05);">
+      <input name="_formsubmit_id" type="text" style="display:none">
       <label><strong>Full Name:</strong></label><br>
       <input type="text" name="name" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;"><br>
 
@@ -91,13 +44,13 @@
       <input type="text" name="property" style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;"><br>
 
       <label><strong>Estimated Purchase Price:</strong></label><br>
-      <input type="text" name="price" style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;"><br>
+      <input type="text" name="purchase_price" style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;"><br>
 
       <label><strong>Estimated Rehab Budget:</strong></label><br>
-      <input type="text" name="rehab" style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;"><br>
+      <input type="text" name="rehab_budget" style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;"><br>
 
       <label><strong>Exit Strategy:</strong></label><br>
-      <textarea name="exit" rows="4" required style="width: 100%; padding: 0.5rem; margin-bottom: 1.5rem;"></textarea><br>
+      <textarea name="exit_strategy" rows="4" required style="width: 100%; padding: 0.5rem; margin-bottom: 1.5rem;"></textarea><br>
 
       <button type="submit" style="padding: 0.75rem 2rem; background-color: #A94442; color: white; border: none; border-radius: 6px; font-weight: bold; cursor: pointer;">Submit Application</button>
     </form>
